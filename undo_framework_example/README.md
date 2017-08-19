@@ -31,8 +31,9 @@ and [`QUndoStack`](http://doc.qt.io/qt-5/qundostack.html).
 Users need to implement undo/redo behaviors for each command.
 Users, however, do not need to implement the stack operations,
 which are handled by `QUndoStack` object.
-The only necessary code for utilizing `QUndoStack` is the creation of `QAction`
-using `QUndoStack`, rather than directly calling QAction as follows.
+The only necessary code for utilizing `QUndoStack` is the creation of 
+[`QAction`](http://doc.qt.io/qt-5/qaction.html) 
+using `QUndoStack`, rather than directly calling `QAction` as follows.
 
 ```
 # For example,
