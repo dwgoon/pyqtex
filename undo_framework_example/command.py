@@ -40,7 +40,7 @@ class MoveCommand(QUndoCommand):
         if self.myDiagramItem != item:
             return False
 
-        self.newPos = item.pos();
+        self.newPos = item.pos()
         self.setText("Move %s"%createCommandString(self.myDiagramItem, self.newPos))
 
         return True
@@ -61,7 +61,7 @@ class DeleteCommand(QUndoCommand):
     def __init__(self, scene, parent=None):
         super().__init__(parent)
 
-        self.myGraphicsScene = scene;
+        self.myGraphicsScene = scene
         items = self.myGraphicsScene.selectedItems()
         items[0].setSelected(False)
         self.myDiagramItem = items[0]

@@ -54,7 +54,7 @@ class MainWindow(QMainWindow):
         self.addTriangleAction.setShortcut("Ctrl+T")
         self.addTriangleAction.triggered.connect(self.addTriangle)
 
-        self.undoAction = self.undoStack.createUndoAction(self, "&Undo");
+        self.undoAction = self.undoStack.createUndoAction(self, "&Undo")
         self.undoAction.setShortcuts(QKeySequence.Undo)
 
         self.redoAction = self.undoStack.createRedoAction(self, "&Redo")
