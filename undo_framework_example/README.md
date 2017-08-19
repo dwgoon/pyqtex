@@ -26,7 +26,7 @@ python app.py
 This diagram shows how *move item event* is finally connected to [`QUndoCommand`](http://doc.qt.io/qt-5/qundocommand.html)
 and [`QUndoStack`](http://doc.qt.io/qt-5/qundostack.html).
 
-![diagram](event_to_undostack.png)
+<img src="event_to_undostack.png" alt="Diagram" width="600px"/>
 
 Users need to implement undo/redo behaviors for each command.
 Users, however, do not need to implement the stack operations,
