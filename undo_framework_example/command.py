@@ -29,6 +29,10 @@ class MoveCommand(QUndoCommand):
         return self.Id
     
     """
+    The mergeWith() makes the consecutive moves a single MoveCommand,
+    (i.e., the item will be moved back to the first position,
+          when undo is performed.)
+    
     def mergeWith(self, command):
         moveCommand = command
         item = moveCommand.myDiagramItem
