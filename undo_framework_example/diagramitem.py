@@ -38,7 +38,7 @@ class DiagramItem(QGraphicsPolygonItem):
         self.setFlag(QGraphicsItem.ItemIsSelectable)
         self.setFlag(QGraphicsItem.ItemIsMovable)
 
-    def DiagramItemType(self):
+    def itemType(self):
         if self.polygon() == self.boxPolygon:
             return DiagramItemType.Box 
         else:

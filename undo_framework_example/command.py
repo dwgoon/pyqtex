@@ -8,7 +8,7 @@ from diagramitem import DiagramItemType
 
 def createCommandString(item, pos):
 
-    if item.DiagramItemType() == DiagramItemType.Box:
+    if item.itemType() == DiagramItemType.Box:
         itemType = "Box"
     else:
         itemType = "Triangle"
